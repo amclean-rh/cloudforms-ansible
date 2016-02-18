@@ -9,7 +9,7 @@ begin
   def log(level, message)
     @method = 'refresh_inventory'
 #   $evm.log(level, "#{@method} - #{message}")
-    puts("#<level.upcase> : #{@method} - #{message}")
+    puts("#{level.upcase} : #{@method} - #{message}")
   end
 
   # Using open3 calls our tower-cli command.
